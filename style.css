@@ -1,0 +1,21 @@
+/*
+
+font-family: 'Muli', sans-serif;
+font-family: 'Lora', serif;
+
+*/
+
+body {
+  font-family: "Muli", sans-serif;
+}
+
+.block-example {
+  background-color: blueviolet;
+  padding: 15px;
+}
+.logo {
+  font-size: 22px;
+  color: #041122;
+  font-weight: 800;
+  text-transform: uppercase;
+}
