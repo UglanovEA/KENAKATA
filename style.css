@@ -61,7 +61,6 @@ body {
 .header {
   position: relative;
   height: 700px;
-  /* background-color: #fcfafb; */
   overflow: hidden;
   display: flex;
 }
@@ -140,18 +139,38 @@ body {
   text-align: center;
   margin-bottom: 90px;
 }
+.button-outline {
+  border-color: rgb(247, 36, 100);
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  height: 38px;
+  width: 220px;
+  font-size: 14px;
+  font-family: "Lora", serif;
+  color: rgb(145, 145, 145);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  padding-top: 12px;
+  display: block;
+  margin: 0 auto 0 auto;
+  transition: all 0.2s ease-in;
+}
+.button-outline:hover {
+  border-color: rgb(247, 36, 100);
+  background-color: rgb(247, 36, 100);
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
 /*                  Product                       */
-.section {
-}
-.container {
-}
-.title {
-}
-.subtitle {
-}
 .card {
   font-family: "Lora", serif;
   text-align: center;
+  margin-bottom: 50px;
 }
 .card__image {
   margin-bottom: 20px;
@@ -171,4 +190,35 @@ body {
   color: #838b8f;
   text-decoration: line-through;
   margin-right: 5px;
+}
+/*                  block adv                      */
+.adv-content-center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.adv-wrapper {
+  height: 185px;
+  background-color: #000000;
+}
+.adv-wrapper--bg-1 {
+  background-image: url(/img/bg/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.adv-wrapper--bg-2 {
+  background-image: url(/img/bg/bg3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.adv__title {
+  font-size: 60px;
+  font-family: "Lora", serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+.adv__button {
 }
