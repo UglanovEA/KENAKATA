@@ -139,6 +139,12 @@ body {
   text-align: center;
   margin-bottom: 90px;
 }
+.description {
+  font-size: 15px;
+  color: rgb(137, 137, 137);
+  line-height: 1.667;
+  text-align: center;
+}
 .button-outline {
   border-color: rgb(247, 36, 100);
   border-radius: 3px;
@@ -285,8 +291,8 @@ body {
 }
 .footer {
   background-color: #000000;
-}
-.container {
+  padding: 20px 0 25px;
+  text-align: center;
 }
 .footer-nav {
   margin-bottom: 20px;
@@ -302,9 +308,24 @@ body {
   margin-right: 0px;
 }
 .footer-nav__link:hover {
-  background-color: #f72464;
+  color: #f72464;
+  text-decoration: none;
 }
 .footer__social {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.footer__social a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 25px;
+}
+.footer__social a:last-child {
+  margin-right: 0px;
+}
+.footer__social a:hover {
+  color: #f72464;
+  text-decoration: none;
 }
 .footer__copyright {
   color: rgb(137, 137, 137);
