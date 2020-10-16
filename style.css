@@ -73,7 +73,7 @@ body {
   left: 45%;
   top: 0;
   background-color: #f9f9f9;
-  background-image: url(/img/bg/bg1.jpg);
+  background-image: url(./img/bg/bg1.jpg);
   background-repeat: no-repeat;
   z-index: -1;
 }
