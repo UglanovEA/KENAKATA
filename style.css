@@ -1,5 +1,5 @@
 body {
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 .nav {
   padding-top: 20px;
@@ -65,7 +65,7 @@ body {
   align-items: center;
 }
 .header::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   width: 100%;
@@ -82,7 +82,7 @@ body {
 .header__title {
   color: #222222;
   font-size: 80px;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-weight: 400;
   line-height: 1.25;
   margin-bottom: 25px;
@@ -98,7 +98,7 @@ body {
   font-size: 20px;
   color: #ffffff;
   background-color: #f72464;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   line-height: 1;
   text-decoration: none;
   height: 50px;
@@ -120,7 +120,7 @@ body {
 .title {
   font-size: 35px;
   color: #222222;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
@@ -136,7 +136,7 @@ body {
   margin-bottom: 100px;
 }
 .card {
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -210,7 +210,7 @@ body {
   height: 40px;
   width: 220px;
   font-size: 14px;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   color: #919191;
   line-height: 1;
   text-transform: uppercase;
@@ -253,13 +253,13 @@ body {
 }
 .adv__title {
   font-size: 60px;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   color: #ffffff;
   line-height: 1.2;
 }
 .adv__button {
   font-size: 22px;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   color: #ffffff;
   line-height: 1;
   text-decoration: none;
@@ -282,7 +282,7 @@ body {
 .blog__title {
   font-size: 18px;
   color: #222222;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-weight: 600;
   line-height: 1.7;
   margin-bottom: 10px;
@@ -296,14 +296,14 @@ body {
 .blog__read-more {
   font-size: 15px;
   color: #222222;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
   position: relative;
 }
 .blog__read-more::after {
-  content: "";
+  content: '';
   display: block;
   width: 18px;
   height: 18px;
