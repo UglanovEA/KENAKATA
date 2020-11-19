@@ -2,8 +2,7 @@ body {
   font-family: 'Muli', sans-serif;
 }
 .nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
 }
 .logo {
   font-size: 22px;
@@ -56,7 +55,6 @@ body {
   left: 5px;
   top: 20px;
 }
-
 .header {
   position: relative;
   height: 700px;
@@ -64,7 +62,7 @@ body {
   display: flex;
   align-items: center;
 }
-.header::before {
+.header::after {
   content: '';
   position: absolute;
   height: 100%;
@@ -83,7 +81,6 @@ body {
   color: #222222;
   font-size: 80px;
   font-family: 'Lora', serif;
-  font-weight: 400;
   line-height: 1.25;
   margin-bottom: 25px;
 }
@@ -103,7 +100,7 @@ body {
   text-decoration: none;
   height: 50px;
   display: inline-block;
-  padding: 14px 45px 14px 45px;
+  padding: 14px 45px;
   border-radius: 3px;
   transition: all 0.2s ease-in;
 }
@@ -113,9 +110,13 @@ body {
   box-shadow: 0px 5px 30px 0px rgba(31, 35, 37, 0.4);
   color: #ffffff;
 }
-
 .section {
-  padding: 100px 0px 100px 0px;
+  padding: 30px 0px;
+}
+@media (min-width: 900px) {
+  .section {
+    padding: 100px 0px;
+  }
 }
 .title {
   font-size: 35px;
@@ -133,7 +134,12 @@ body {
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+@media (min-width: 900px) {
+  .subtitle {
+    margin-bottom: 100px;
+  }
 }
 .card {
   font-family: 'Lora', serif;
@@ -151,12 +157,12 @@ body {
 .card__title {
   color: #222222;
   font-size: 18px;
-  margin-bottom: 5px;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 .card__price {
-  font-size: 13px;
   color: #f72464;
+  font-size: 13px;
   font-weight: 600;
 }
 .card__price span {
@@ -228,7 +234,6 @@ body {
   text-decoration: none;
   transition: all 0.2s ease-in;
 }
-
 .adv-wrapper {
   height: 185px;
   background-color: #000000;
@@ -277,26 +282,31 @@ body {
 }
 
 .blog {
-  margin-bottom: 25px;
+  margin-bottom: 50px;
+}
+@media (min-width: 900px) {
+  .blog {
+    margin-bottom: 25px;
+  }
 }
 .blog__title {
-  font-size: 18px;
   color: #222222;
   font-family: 'Lora', serif;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 .blog__desc {
-  font-size: 15px;
   color: #898989;
+  font-size: 15px;
   line-height: 1.7;
   margin-bottom: 10px;
 }
 .blog__read-more {
-  font-size: 15px;
   color: #222222;
   font-family: 'Lora', serif;
+  font-size: 15px;
   font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
@@ -319,6 +329,15 @@ body {
   color: #f72464;
   text-decoration: none;
 }
+.button-outline {
+  margin-bottom: 50px;
+}
+@media (min-width: 900px) {
+  .button-outline {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+}
 .description {
   display: flex;
   flex-direction: column;
@@ -331,15 +350,15 @@ body {
   color: #898989;
   line-height: 1.7;
   text-align: center;
-  width: 520px;
+  max-width: 520px;
 }
 .subscribe {
   display: flex;
   justify-content: center;
 }
 .subscribe__input {
-  font-size: 15px;
   color: #c4c4c4;
+  font-size: 15px;
   line-height: 1;
   text-align: center;
   border-width: 1px;
@@ -349,11 +368,7 @@ body {
   height: 38px;
   width: 248px;
   margin-right: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.subscribe__input:focus {
-  outline: none;
+  padding: 0px 10px;
 }
 .subscribe__button {
   font-size: 15px;
@@ -392,21 +407,22 @@ body {
   line-height: 1.5;
   color: #ffffff;
   text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+.footer-nav__link:hover {
+  color: #f72464;
+  text-decoration: none;
 }
 .footer-nav__list {
   padding: 0px;
 }
 .footer-nav__item {
   list-style-type: none;
-  display: inline;
+  display: inline-block;
   margin-right: 35px;
 }
 .footer-nav__item:last-child {
   margin-right: 0px;
-}
-.footer-nav__link:hover {
-  color: #f72464;
-  text-decoration: none;
 }
 .footer-social {
   color: #ffffff;
@@ -426,6 +442,7 @@ body {
 .footer-social a {
   color: #ffffff;
   text-decoration: none;
+  transition: color 0.2s ease-in;
 }
 .footer-social a:hover {
   color: #f72464;
