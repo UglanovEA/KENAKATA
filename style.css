@@ -5,8 +5,8 @@ body {
   padding: 20px 0px;
 }
 .logo {
-  font-size: 22px;
   color: #041122;
+  font-size: 22px;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
@@ -24,8 +24,8 @@ body {
   padding: 0px;
 }
 .navigation__item {
-  list-style-type: none;
   display: inline;
+  list-style-type: none;
   margin-right: 30px;
 }
 .navigation__link {
@@ -37,32 +37,40 @@ body {
   text-decoration: none;
 }
 .cart {
-  padding-top: 5px;
-  color: #52575d;
   position: relative;
+  color: #52575d;
+  padding-top: 5px;
 }
 .cart__number {
   width: 19px;
   height: 19px;
-  background-color: #f72464;
-  border-radius: 10px;
+  position: absolute;
+  left: 5px;
+  top: 20px;
   color: #ffffff;
   font-size: 12px;
   font-weight: 600;
   text-align: center;
+  background-color: #f72464;
+  border-radius: 10px;
   padding-top: 1px;
-  position: absolute;
-  left: 5px;
-  top: 20px;
 }
 .header {
   position: relative;
-  height: 700px;
+  height: auto;
   overflow: hidden;
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .header {
+    height: 700px;
+    margin-bottom: 0px;
+  }
 }
 .header::after {
+  display: none;
   content: '';
   position: absolute;
   height: 100%;
@@ -74,15 +82,35 @@ body {
   background-repeat: no-repeat;
   z-index: -1;
 }
+@media (min-width: 1024px) {
+  .header::after {
+    display: block;
+  }
+}
 .header__content {
-  width: 700px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .header__content {
+    text-align: inherit;
+    align-items: baseline;
+  }
 }
 .header__title {
   color: #222222;
-  font-size: 80px;
   font-family: 'Lora', serif;
+  font-size: 60px;
   line-height: 1.25;
   margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .header__title {
+    font-size: 80px;
+  }
 }
 .header__description {
   color: #52575d;
@@ -92,23 +120,23 @@ body {
   margin-bottom: 50px;
 }
 .header__button {
-  font-size: 20px;
+  height: 50px;
+  display: inline-block;
   color: #ffffff;
   background-color: #f72464;
   font-family: 'Lora', serif;
+  font-size: 20px;
   line-height: 1;
   text-decoration: none;
-  height: 50px;
-  display: inline-block;
-  padding: 14px 45px;
   border-radius: 3px;
   transition: all 0.2s ease-in;
+  padding: 14px 45px;
 }
 .header__button:hover {
+  color: #ffffff;
   background-color: #da0f4d;
   text-decoration: none;
   box-shadow: 0px 5px 30px 0px rgba(31, 35, 37, 0.4);
-  color: #ffffff;
 }
 .section {
   padding: 30px 0px;
@@ -119,17 +147,17 @@ body {
   }
 }
 .title {
-  font-size: 35px;
   color: #222222;
   font-family: 'Lora', serif;
+  font-size: 35px;
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 5px;
 }
 .subtitle {
-  font-size: 12px;
   color: #919191;
+  font-size: 12px;
   font-weight: 300;
   line-height: 1.2;
   text-transform: uppercase;
@@ -147,9 +175,9 @@ body {
   margin-bottom: 50px;
 }
 .card__image {
-  margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .card__image img {
   max-width: 100%;
@@ -188,49 +216,49 @@ body {
   opacity: 1;
 }
 .card__button {
-  font-size: 20px;
-  background-color: #f72464;
-  color: #ffffff;
-  line-height: 1;
-  text-decoration: none;
   width: 120px;
   height: 40px;
-  padding-top: 10px;
   display: block;
+  color: #ffffff;
+  background-color: #f72464;
+  font-size: 20px;
+  line-height: 1;
+  text-decoration: none;
   border-radius: 3px;
   box-shadow: 0px 5px 30px 0px rgba(31, 35, 37, 0.25);
   transition: all 0.2s ease-in;
+  padding-top: 10px;
   margin-bottom: 12px;
 }
 .card__button:hover {
+  color: #ffffff;
   background-color: #da0f4d;
   text-decoration: none;
   box-shadow: 0px 5px 30px 0px rgba(31, 35, 37, 0.4);
-  color: #ffffff;
 }
 .button-outline {
-  border-color: #f72464;
-  border-radius: 3px;
-  border-width: 1px;
-  border-style: solid;
-  height: 40px;
   width: 220px;
-  font-size: 14px;
-  font-family: 'Lora', serif;
+  height: 40px;
+  display: block;
   color: #919191;
+  font-family: 'Lora', serif;
+  font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  border-color: #f72464;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
   padding-top: 12px;
-  display: block;
-  margin: 0 auto 0 auto;
   transition: all 0.2s ease-in;
+  margin: 0 auto;
 }
 .button-outline:hover {
+  color: #ffffff;
   border-color: #f72464;
   background-color: #f72464;
-  color: #ffffff;
   text-decoration: none;
   transition: all 0.2s ease-in;
 }
@@ -251,36 +279,53 @@ body {
   background-size: cover;
 }
 .adv-content-center {
+  height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+}
+.adv-content-center img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+@media (min-width: 540px) {
+  .adv-content-center img {
+    width: 165px;
+  }
 }
 .adv__title {
-  font-size: 60px;
-  font-family: 'Lora', serif;
   color: #ffffff;
+  font-family: 'Lora', serif;
+  font-size: 40px;
   line-height: 1.2;
 }
+@media (min-width: 992px) {
+  .adv__title {
+    font-size: 60px;
+  }
+}
 .adv__button {
-  font-size: 22px;
-  font-family: 'Lora', serif;
+  height: 50px;
   color: #ffffff;
+  font-family: 'Lora', serif;
+  font-size: 22px;
   line-height: 1;
   text-decoration: none;
   border-radius: 3px;
   background-color: #f72464;
   box-shadow: 0px 5px 30px 0px rgba(31, 35, 37, 0.25);
-  height: 50px;
-  padding: 15px 60px;
   transition: all 0.2s ease-in;
+  padding: 15px 60px;
 }
 .adv__button:hover {
   color: #ffffff;
   text-decoration: none;
   background-color: #da0f4d;
 }
-
 .blog {
   margin-bottom: 50px;
 }
@@ -391,7 +436,6 @@ body {
   box-shadow: 0px 5px 30px 0px rgba(31, 35, 37, 0.4);
   text-decoration: none;
 }
-
 .footer {
   background-color: #000000;
   padding: 20px 0 25px;
@@ -450,10 +494,17 @@ body {
   color: #898989;
   font-size: 12px;
 }
-
 .mt-60 {
   margin-top: 60px;
 }
 .mb-100 {
   margin-bottom: 100px;
+}
+.justify {
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .justify {
+    justify-content: space-between;
+  }
 }
